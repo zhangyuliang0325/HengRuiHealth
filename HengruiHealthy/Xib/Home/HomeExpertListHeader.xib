@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HomeExpertListHeader">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OOZ-0d-Mwn" userLabel="_slide">
+                    <rect key="frame" x="0.0" y="50" width="375" height="5"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="5" id="lZ6-l9-9DN"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V6i-9i-G1s">
+                    <rect key="frame" x="0.0" y="0.0" width="125" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="gGf-XD-bdB"/>
+                    </constraints>
+                    <state key="normal" title="评价最优">
+                        <color key="titleColor" red="0.47058823529411764" green="0.47058823529411764" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="评价最优">
+                        <color key="titleColor" red="1" green="0.47354910709999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionForReviewButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="bhp-ea-GNW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9a3-e8-A5b">
+                    <rect key="frame" x="250" y="0.0" width="125" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="c2c-aI-FZp"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="资质最优">
+                        <color key="titleColor" red="0.47058823529411764" green="0.47058823529411764" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="资质最优">
+                        <color key="titleColor" red="1" green="0.47354910709999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionForAptitudeButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="RD8-qK-wbl"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FPv-fP-5YI">
+                    <rect key="frame" x="147" y="49" width="81" height="2"/>
+                    <color key="backgroundColor" red="1" green="0.47354910709999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="81" id="TCL-qn-b1y"/>
+                        <constraint firstAttribute="height" constant="2" id="WiX-NH-eaw"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glQ-S9-TiG">
+                    <rect key="frame" x="125" y="0.0" width="125" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="Uyu-5V-UBt"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <state key="normal" title="价格最优">
+                        <color key="titleColor" red="0.47058823529411764" green="0.47058823529411764" blue="0.47058823529411764" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="selected" title="价格最优">
+                        <color key="titleColor" red="1" green="0.47354910709999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="actionForPriceButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="Dd6-if-hXe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="glQ-S9-TiG" firstAttribute="leading" secondItem="V6i-9i-G1s" secondAttribute="trailing" id="3CC-RV-Aav"/>
+                <constraint firstAttribute="trailing" secondItem="9a3-e8-A5b" secondAttribute="trailing" id="6nc-oQ-TUh"/>
+                <constraint firstItem="9a3-e8-A5b" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7QK-5m-LU2"/>
+                <constraint firstItem="glQ-S9-TiG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Dw2-0c-j0C"/>
+                <constraint firstItem="glQ-S9-TiG" firstAttribute="width" secondItem="9a3-e8-A5b" secondAttribute="width" id="Fr3-Lp-b6z"/>
+                <constraint firstItem="V6i-9i-G1s" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Jtc-hY-MOZ"/>
+                <constraint firstAttribute="bottom" secondItem="OOZ-0d-Mwn" secondAttribute="bottom" id="Tw8-UY-a2X"/>
+                <constraint firstItem="FPv-fP-5YI" firstAttribute="top" secondItem="glQ-S9-TiG" secondAttribute="bottom" id="c8p-Je-Mww"/>
+                <constraint firstItem="9a3-e8-A5b" firstAttribute="leading" secondItem="glQ-S9-TiG" secondAttribute="trailing" id="kN5-rW-t7f"/>
+                <constraint firstItem="OOZ-0d-Mwn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="mMB-Ok-MIV"/>
+                <constraint firstItem="V6i-9i-G1s" firstAttribute="width" secondItem="glQ-S9-TiG" secondAttribute="width" id="oHj-xs-KXY"/>
+                <constraint firstItem="FPv-fP-5YI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="s9k-s3-0kX"/>
+                <constraint firstItem="V6i-9i-G1s" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="t8T-31-lKh"/>
+                <constraint firstAttribute="trailing" secondItem="OOZ-0d-Mwn" secondAttribute="trailing" id="tuR-Q9-8kK"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_btnAptitude" destination="9a3-e8-A5b" id="eAp-8s-i81"/>
+                <outlet property="_btnEvalue" destination="V6i-9i-G1s" id="WaU-co-y01"/>
+                <outlet property="_btnPrice" destination="glQ-S9-TiG" id="u6n-0D-WFi"/>
+                <outlet property="_consSlideCenter" destination="s9k-s3-0kX" id="0ts-Me-8FN"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

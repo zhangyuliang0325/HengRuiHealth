@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ChartViewCellIdentifier" id="cZX-IO-ASf" customClass="ChartViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="181" height="139"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="181" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDT-ny-VJa" customClass="HDScrollChartView">
+                        <rect key="frame" x="0.0" y="0.0" width="181" height="139"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="unI-70-1ek">
+                        <rect key="frame" x="72" y="51" width="37" height="37"/>
+                        <color key="color" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    </activityIndicatorView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="qDT-ny-VJa" secondAttribute="bottom" id="18b-G8-s1B"/>
+                <constraint firstAttribute="trailing" secondItem="qDT-ny-VJa" secondAttribute="trailing" id="RyK-Hy-ErC"/>
+                <constraint firstItem="qDT-ny-VJa" firstAttribute="leading" secondItem="cZX-IO-ASf" secondAttribute="leading" id="XO3-s5-K9z"/>
+                <constraint firstItem="qDT-ny-VJa" firstAttribute="top" secondItem="cZX-IO-ASf" secondAttribute="top" id="d8J-aX-fng"/>
+                <constraint firstItem="unI-70-1ek" firstAttribute="centerY" secondItem="qDT-ny-VJa" secondAttribute="centerY" id="fS2-PO-Pd5"/>
+                <constraint firstItem="unI-70-1ek" firstAttribute="centerX" secondItem="qDT-ny-VJa" secondAttribute="centerX" id="gCA-hw-Dt7"/>
+            </constraints>
+            <size key="customSize" width="181" height="139"/>
+            <connections>
+                <outlet property="chartView" destination="qDT-ny-VJa" id="SVa-Fg-H1E"/>
+                <outlet property="indicator" destination="unI-70-1ek" id="oyo-tS-Gbf"/>
+            </connections>
+            <point key="canvasLocation" x="157.5" y="323.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

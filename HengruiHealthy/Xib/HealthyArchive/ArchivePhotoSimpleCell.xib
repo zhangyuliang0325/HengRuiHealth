@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CollectionPhotoSingleCell" id="dOT-zF-KGx" customClass="ArchivePhotoSingleCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="add_image_big" translatesAutoresizingMaskIntoConstraints="NO" id="Qqq-QQ-tfH">
+                        <rect key="frame" x="5" y="5" width="50" height="50"/>
+                    </imageView>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7vl-mH-Yl1">
+                        <rect key="frame" x="40" y="0.0" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="2q8-6c-JdC"/>
+                            <constraint firstAttribute="width" constant="20" id="iiB-BW-Q3z"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <state key="normal" image="delete_image"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRaidus">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="deletePhoto:" destination="dOT-zF-KGx" eventType="touchUpInside" id="DrV-ld-CzJ"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Qqq-QQ-tfH" secondAttribute="trailing" constant="5" id="7ya-Ua-hoL"/>
+                <constraint firstItem="Qqq-QQ-tfH" firstAttribute="leading" secondItem="dOT-zF-KGx" secondAttribute="leading" constant="5" id="FgG-F9-6pD"/>
+                <constraint firstItem="7vl-mH-Yl1" firstAttribute="top" secondItem="dOT-zF-KGx" secondAttribute="top" id="edK-T8-JzY"/>
+                <constraint firstAttribute="trailing" secondItem="7vl-mH-Yl1" secondAttribute="trailing" id="kU9-GN-8Fq"/>
+                <constraint firstAttribute="bottom" secondItem="Qqq-QQ-tfH" secondAttribute="bottom" constant="5" id="vTA-Je-juX"/>
+                <constraint firstItem="Qqq-QQ-tfH" firstAttribute="top" secondItem="dOT-zF-KGx" secondAttribute="top" constant="5" id="xcR-B0-j09"/>
+            </constraints>
+            <size key="customSize" width="92" height="84"/>
+            <connections>
+                <outlet property="_btnDelete" destination="7vl-mH-Yl1" id="E8n-zk-FWc"/>
+                <outlet property="_imgPhoto" destination="Qqq-QQ-tfH" id="pmJ-Y6-Lb6"/>
+            </connections>
+            <point key="canvasLocation" x="-33" y="78"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="add_image_big" width="60" height="60"/>
+        <image name="delete_image" width="25" height="25"/>
+    </resources>
+</document>

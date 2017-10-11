@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kKq-jO-UNA" customClass="DateTypeView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="91b-Hi-VNH">
+                    <rect key="frame" x="162.5" y="42" width="50" height="2"/>
+                    <color key="backgroundColor" red="1" green="0.42745098040000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="iCx-gT-11N"/>
+                        <constraint firstAttribute="width" constant="50" id="nJP-sd-uva"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="IgV-yZ-8V5">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Ciw-Km-Xs7">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="91b-Hi-VNH" secondAttribute="bottom" id="8vw-4v-iMp"/>
+                <constraint firstItem="91b-Hi-VNH" firstAttribute="top" secondItem="IgV-yZ-8V5" secondAttribute="bottom" id="9CE-F8-DaW"/>
+                <constraint firstItem="91b-Hi-VNH" firstAttribute="centerX" secondItem="kKq-jO-UNA" secondAttribute="centerX" id="Cua-ib-j8H"/>
+                <constraint firstAttribute="trailing" secondItem="IgV-yZ-8V5" secondAttribute="trailing" id="LBk-w5-Kug"/>
+                <constraint firstItem="IgV-yZ-8V5" firstAttribute="top" secondItem="kKq-jO-UNA" secondAttribute="top" id="YZq-wc-8gL"/>
+                <constraint firstItem="IgV-yZ-8V5" firstAttribute="leading" secondItem="kKq-jO-UNA" secondAttribute="leading" id="bwQ-N4-aHw"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_constaintsSlideCenter" destination="Cua-ib-j8H" id="htE-Zc-NT7"/>
+                <outlet property="_cvType" destination="IgV-yZ-8V5" id="oGu-Se-sXs"/>
+                <outlet property="_layoutType" destination="Ciw-Km-Xs7" id="DYa-6x-e4r"/>
+                <outlet property="_vwSlide" destination="91b-Hi-VNH" id="L7Y-Ya-YmD"/>
+            </connections>
+            <point key="canvasLocation" x="160.5" y="-139"/>
+        </view>
+    </objects>
+</document>

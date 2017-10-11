@@ -1,0 +1,13 @@
+//
+//  HomeTableViewController.h
+//  HengruiHealthy
+//
+//  Created by Mac on 2017/8/9.
+//  Copyright © 2017年 com.hengrui. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+@interface HomeTableViewController : UITableViewController
+
+@end

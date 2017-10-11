@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="ExpertSearchView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="search" translatesAutoresizingMaskIntoConstraints="NO" id="wYN-e9-zEY">
+                    <rect key="frame" x="8" y="8" width="19" height="19"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="wYN-e9-zEY" secondAttribute="height" id="i5v-LV-UJZ"/>
+                    </constraints>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="地区、疾病类型，专家名称" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="KGF-Df-58g">
+                    <rect key="frame" x="35" y="0.0" width="332" height="35"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="search"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="wYN-e9-zEY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="4QU-Zd-Qrp"/>
+                <constraint firstItem="KGF-Df-58g" firstAttribute="leading" secondItem="wYN-e9-zEY" secondAttribute="trailing" constant="8" id="G3u-F7-NVD"/>
+                <constraint firstAttribute="bottom" secondItem="wYN-e9-zEY" secondAttribute="bottom" constant="8" id="GaM-9Z-spO"/>
+                <constraint firstItem="KGF-Df-58g" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="XMc-Ng-jBx"/>
+                <constraint firstAttribute="bottom" secondItem="KGF-Df-58g" secondAttribute="bottom" id="nKA-yc-XFG"/>
+                <constraint firstItem="wYN-e9-zEY" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="qg3-WK-9pI"/>
+                <constraint firstAttribute="trailing" secondItem="KGF-Df-58g" secondAttribute="trailing" constant="8" id="rwj-2N-yJl"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                    <integer key="value" value="5"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="_tfSearch" destination="KGF-Df-58g" id="Adf-Ey-qm5"/>
+            </connections>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="search" width="18" height="18"/>
+    </resources>
+</document>

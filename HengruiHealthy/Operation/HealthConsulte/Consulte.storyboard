@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Health Consulte View Controller-->
+        <scene sceneID="e9u-rE-d3e">
+            <objects>
+                <viewController storyboardIdentifier="HealthConsulteViewControllerID" id="mpp-7X-FGg" customClass="HealthConsulteViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N19-ni-IA3"/>
+                        <viewControllerLayoutGuide type="bottom" id="XwT-eb-1ya"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="muL-bk-ALb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="T5i-fh-0by">
+                                <rect key="frame" x="0.0" y="20" width="375" height="46"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLs-I6-S4L">
+                                        <rect key="frame" x="0.0" y="1" width="187.5" height="44"/>
+                                        <color key="backgroundColor" red="0.81568627450980391" green="0.81568627450980391" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="视频新闻">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" title="视频新闻">
+                                            <color key="titleColor" red="1" green="0.42745098040000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W0Q-jB-BUC">
+                                        <rect key="frame" x="187.5" y="1" width="187.5" height="44"/>
+                                        <color key="backgroundColor" red="0.81568627450980391" green="0.81568627450980391" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <state key="normal" title="图片新闻">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="selected" title="图片新闻">
+                                            <color key="titleColor" red="1" green="0.42745098040000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="W0Q-jB-BUC" secondAttribute="bottom" constant="1" id="I3e-Yl-uJg"/>
+                                    <constraint firstItem="W0Q-jB-BUC" firstAttribute="leading" secondItem="LLs-I6-S4L" secondAttribute="trailing" id="IEH-Br-kqL"/>
+                                    <constraint firstAttribute="bottom" secondItem="LLs-I6-S4L" secondAttribute="bottom" constant="1" id="OTD-zK-tph"/>
+                                    <constraint firstItem="W0Q-jB-BUC" firstAttribute="width" secondItem="LLs-I6-S4L" secondAttribute="width" id="dOh-E1-DeD"/>
+                                    <constraint firstItem="W0Q-jB-BUC" firstAttribute="top" secondItem="T5i-fh-0by" secondAttribute="top" constant="1" id="f2W-H4-XNY"/>
+                                    <constraint firstItem="LLs-I6-S4L" firstAttribute="top" secondItem="T5i-fh-0by" secondAttribute="top" constant="1" id="hIY-kc-Sik"/>
+                                    <constraint firstItem="LLs-I6-S4L" firstAttribute="leading" secondItem="T5i-fh-0by" secondAttribute="leading" id="hU3-g9-Q03"/>
+                                    <constraint firstAttribute="height" constant="46" id="sDk-MR-f9c"/>
+                                    <constraint firstAttribute="trailing" secondItem="W0Q-jB-BUC" secondAttribute="trailing" id="vXj-9d-KV4"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RFM-nS-a6B">
+                                <rect key="frame" x="0.0" y="66" width="375" height="601"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="mpp-7X-FGg" id="jZA-4h-1Bu"/>
+                                    <outlet property="delegate" destination="mpp-7X-FGg" id="Y2W-Bh-TWy"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RFM-nS-a6B" firstAttribute="top" secondItem="T5i-fh-0by" secondAttribute="bottom" id="Crv-qe-Gw4"/>
+                            <constraint firstItem="T5i-fh-0by" firstAttribute="top" secondItem="N19-ni-IA3" secondAttribute="bottom" id="HwY-JR-5M8"/>
+                            <constraint firstItem="T5i-fh-0by" firstAttribute="leading" secondItem="muL-bk-ALb" secondAttribute="leading" id="Ofd-Qa-fpe"/>
+                            <constraint firstItem="RFM-nS-a6B" firstAttribute="leading" secondItem="muL-bk-ALb" secondAttribute="leading" id="X5g-00-EPL"/>
+                            <constraint firstAttribute="trailing" secondItem="T5i-fh-0by" secondAttribute="trailing" id="lpt-ta-TTn"/>
+                            <constraint firstAttribute="bottom" secondItem="RFM-nS-a6B" secondAttribute="bottom" id="qjk-eb-ld8"/>
+                            <constraint firstAttribute="trailing" secondItem="RFM-nS-a6B" secondAttribute="trailing" id="x8v-nn-ZtS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="contentTableView" destination="RFM-nS-a6B" id="JOi-Da-ulH"/>
+                        <outlet property="photoButton" destination="W0Q-jB-BUC" id="vSz-1x-WrU"/>
+                        <outlet property="videoButton" destination="LLs-I6-S4L" id="lVm-DC-UQ6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4RW-ck-CjQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-39" y="170"/>
+        </scene>
+    </scenes>
+</document>

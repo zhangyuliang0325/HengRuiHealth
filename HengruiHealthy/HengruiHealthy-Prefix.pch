@@ -1,0 +1,40 @@
+//
+//  HengruiHealthy-Prefix.pch
+//  HengruiHealthy
+//
+//  Created by Mac on 2017/6/2.
+//  Copyright © 2017年 com.hengrui. All rights reserved.
+//
+
+#ifndef HengruiHealthy_Prefix_pch
+#define HengruiHealthy_Prefix_pch
+
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+
+
+#endif /* HengruiHealthy_Prefix_pch */
+
+
+#define HRHtyScreenWidth [UIScreen mainScreen].bounds.size.width
+#define HRHtyScreenHeight [UIScreen mainScreen].bounds.size.height
+
+
+#define kHRHtyAccount @"hzhel_account_key"
+#define kHRHtyPassword @"hzhel_password_key"
+#define kHRHtyUserId @"hzhel_user_id"
+#define kHRHtyAuthToken @"Cookie_token"
+#define kHRHtyWcBID @"1488420382"
+
+
+#define kNotificationRepleaceArchiveList @"hzhel_notification_repleace_archive_list"
+#define kNotificationRefreshMedicationRecords @"hzhel_notification_refresh_medication_records"
+
+#define BasePath @"http://www.hengzhankj.com/"      //生产环境的基本路径
+//#define BasePath @"http://192.168.1.113:9003/"        //测试环境的基本路径
+
+
+
+#define ChartViewHeight 250
+#define DateTypeHeight 50
+#define DatePickerHeight 50

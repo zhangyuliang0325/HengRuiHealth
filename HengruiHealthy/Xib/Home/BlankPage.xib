@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BlankPage">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0l-Zh-cRn">
+                    <rect key="frame" x="123" y="269.5" width="128" height="128"/>
+                    <state key="normal" backgroundImage="Blank"/>
+                    <connections>
+                        <action selector="clickRetryButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="9sc-Ut-Aq4"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="没有检测记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZS1-bT-VPQ">
+                    <rect key="frame" x="135.5" y="407" width="104" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="e0l-Zh-cRn" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="0Em-kf-Evp"/>
+                <constraint firstItem="ZS1-bT-VPQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6Ur-Nh-Wf2"/>
+                <constraint firstItem="e0l-Zh-cRn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="H61-cW-ctA"/>
+                <constraint firstItem="ZS1-bT-VPQ" firstAttribute="top" secondItem="e0l-Zh-cRn" secondAttribute="bottom" constant="9.5" id="IwY-3F-E9r"/>
+            </constraints>
+            <connections>
+                <outlet property="_lblPrompt" destination="ZS1-bT-VPQ" id="OUc-aY-WyA"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="Blank" width="128" height="128"/>
+    </resources>
+</document>

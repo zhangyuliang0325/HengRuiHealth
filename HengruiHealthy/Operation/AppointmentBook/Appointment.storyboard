@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Appointment Book View Controller-->
+        <scene sceneID="4uJ-of-Hb2">
+            <objects>
+                <viewController storyboardIdentifier="AppointmentBookViewControllerID" id="Bba-kZ-PnW" customClass="AppointmentBookViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tna-xW-Go2"/>
+                        <viewControllerLayoutGuide type="bottom" id="13O-v5-gDQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ncJ-jm-gHX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J5t-9S-Mvj">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cs8-5f-Xc7">
+                                        <rect key="frame" x="0.0" y="0.0" width="94" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="全部" backgroundImage="order_no_select">
+                                            <color key="titleColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="全部" backgroundImage="order_select">
+                                            <color key="titleColor" red="1" green="0.42745098040000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="order_select">
+                                            <color key="titleColor" red="1" green="0.42745098040000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="allButtonClick:" destination="Bba-kZ-PnW" eventType="touchUpInside" id="BRU-co-3zE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eYx-f9-Vzp">
+                                        <rect key="frame" x="94" y="0.0" width="93.5" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="进行中" backgroundImage="order_no_select">
+                                            <color key="titleColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" backgroundImage="order_select">
+                                            <color key="titleColor" red="1" green="0.42745098040000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="order_select">
+                                            <color key="titleColor" red="1" green="0.42745098040000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="goingOnButtonClick:" destination="Bba-kZ-PnW" eventType="touchUpInside" id="cEe-p4-JPV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyX-8b-6v7">
+                                        <rect key="frame" x="187.5" y="0.0" width="94" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="未付款" backgroundImage="order_no_select">
+                                            <color key="titleColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="未付款" backgroundImage="order_select">
+                                            <color key="titleColor" red="1" green="0.42745098040000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="order_select">
+                                            <color key="titleColor" red="1" green="0.42745098040000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="unPayedButtonClick:" destination="Bba-kZ-PnW" eventType="touchUpInside" id="ceJ-zM-PWU"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uFp-7B-pPn">
+                                        <rect key="frame" x="281" y="0.0" width="93.5" height="44"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <state key="normal" title="已完成" backgroundImage="order_no_select">
+                                            <color key="titleColor" red="0.47058823529999999" green="0.47058823529999999" blue="0.47058823529999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="selected" title="已完成" backgroundImage="order_select">
+                                            <color key="titleColor" red="1" green="0.42745098040000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <state key="highlighted" backgroundImage="order_select">
+                                            <color key="titleColor" red="1" green="0.42745098040000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="completeButtonClick:" destination="Bba-kZ-PnW" eventType="touchUpInside" id="VYg-ll-sSF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="uFp-7B-pPn" secondAttribute="trailing" id="6IX-uC-Zu2"/>
+                                    <constraint firstItem="YyX-8b-6v7" firstAttribute="leading" secondItem="eYx-f9-Vzp" secondAttribute="trailing" id="Bai-CF-Kw1"/>
+                                    <constraint firstItem="uFp-7B-pPn" firstAttribute="leading" secondItem="YyX-8b-6v7" secondAttribute="trailing" id="CHo-Am-azh"/>
+                                    <constraint firstItem="YyX-8b-6v7" firstAttribute="top" secondItem="J5t-9S-Mvj" secondAttribute="top" id="CrB-0b-l9H"/>
+                                    <constraint firstAttribute="bottom" secondItem="YyX-8b-6v7" secondAttribute="bottom" id="IUf-tQ-SDD"/>
+                                    <constraint firstItem="eYx-f9-Vzp" firstAttribute="width" secondItem="YyX-8b-6v7" secondAttribute="width" id="Ie8-yE-KsC"/>
+                                    <constraint firstAttribute="bottom" secondItem="cs8-5f-Xc7" secondAttribute="bottom" id="T5y-1F-m0t"/>
+                                    <constraint firstAttribute="height" constant="44" id="U2q-rl-HDd"/>
+                                    <constraint firstItem="cs8-5f-Xc7" firstAttribute="width" secondItem="eYx-f9-Vzp" secondAttribute="width" id="ZSP-bd-d3h"/>
+                                    <constraint firstItem="cs8-5f-Xc7" firstAttribute="leading" secondItem="J5t-9S-Mvj" secondAttribute="leading" id="fyp-Uk-Duz"/>
+                                    <constraint firstItem="cs8-5f-Xc7" firstAttribute="top" secondItem="J5t-9S-Mvj" secondAttribute="top" id="jLe-KW-hHf"/>
+                                    <constraint firstItem="eYx-f9-Vzp" firstAttribute="top" secondItem="J5t-9S-Mvj" secondAttribute="top" id="mdM-7P-lFf"/>
+                                    <constraint firstItem="uFp-7B-pPn" firstAttribute="top" secondItem="J5t-9S-Mvj" secondAttribute="top" id="pCc-Ie-uh0"/>
+                                    <constraint firstAttribute="bottom" secondItem="uFp-7B-pPn" secondAttribute="bottom" id="sHC-md-ynB"/>
+                                    <constraint firstAttribute="bottom" secondItem="eYx-f9-Vzp" secondAttribute="bottom" id="snd-uX-ftw"/>
+                                    <constraint firstItem="YyX-8b-6v7" firstAttribute="width" secondItem="uFp-7B-pPn" secondAttribute="width" id="yZg-bh-jIH"/>
+                                    <constraint firstItem="eYx-f9-Vzp" firstAttribute="leading" secondItem="cs8-5f-Xc7" secondAttribute="trailing" id="zid-w2-bJ9"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="433" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2Rd-me-e8T">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Bba-kZ-PnW" id="3gn-uH-Kyj"/>
+                                    <outlet property="delegate" destination="Bba-kZ-PnW" id="UaM-DR-L5X"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="J5t-9S-Mvj" firstAttribute="leading" secondItem="ncJ-jm-gHX" secondAttribute="leading" id="6cl-Kj-97D"/>
+                            <constraint firstItem="J5t-9S-Mvj" firstAttribute="top" secondItem="Tna-xW-Go2" secondAttribute="bottom" id="Cz3-t1-q0i"/>
+                            <constraint firstItem="13O-v5-gDQ" firstAttribute="top" secondItem="2Rd-me-e8T" secondAttribute="bottom" id="F9E-PI-v2X"/>
+                            <constraint firstAttribute="trailing" secondItem="J5t-9S-Mvj" secondAttribute="trailing" id="Lkc-vN-JEi"/>
+                            <constraint firstItem="2Rd-me-e8T" firstAttribute="leading" secondItem="ncJ-jm-gHX" secondAttribute="leading" id="LwB-TG-4oX"/>
+                            <constraint firstItem="2Rd-me-e8T" firstAttribute="top" secondItem="J5t-9S-Mvj" secondAttribute="bottom" id="Ra7-cd-M8B"/>
+                            <constraint firstAttribute="trailing" secondItem="2Rd-me-e8T" secondAttribute="trailing" id="y0q-Ig-a9w"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="allButton" destination="cs8-5f-Xc7" id="Ye1-99-pcU"/>
+                        <outlet property="completeButton" destination="uFp-7B-pPn" id="CNi-FB-Gmn"/>
+                        <outlet property="contentTableView" destination="2Rd-me-e8T" id="tcK-Sl-mNx"/>
+                        <outlet property="goingOnButton" destination="eYx-f9-Vzp" id="DVp-4t-DgQ"/>
+                        <outlet property="unPayButton" destination="YyX-8b-6v7" id="wBE-0L-GLj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vle-OK-U04" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="78" y="172"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="order_no_select" width="5" height="44"/>
+        <image name="order_select" width="5" height="44"/>
+    </resources>
+</document>

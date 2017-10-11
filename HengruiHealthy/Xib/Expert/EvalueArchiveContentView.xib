@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zQ1-9T-tFQ" customClass="EvalueArchiveContentView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="evalue_archive" translatesAutoresizingMaskIntoConstraints="NO" id="cCg-nr-AP8">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J3T-BI-v8s">
+                    <rect key="frame" x="10" y="18" width="355" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="J3T-BI-v8s" firstAttribute="top" secondItem="zQ1-9T-tFQ" secondAttribute="top" constant="18" id="8lM-Eu-5fD"/>
+                <constraint firstItem="cCg-nr-AP8" firstAttribute="top" secondItem="zQ1-9T-tFQ" secondAttribute="top" id="UBO-EY-b3Z"/>
+                <constraint firstItem="cCg-nr-AP8" firstAttribute="leading" secondItem="zQ1-9T-tFQ" secondAttribute="leading" id="VNX-SW-gh6"/>
+                <constraint firstAttribute="bottom" secondItem="cCg-nr-AP8" secondAttribute="bottom" id="eTc-EN-tcR"/>
+                <constraint firstAttribute="trailing" secondItem="J3T-BI-v8s" secondAttribute="trailing" constant="10" id="j4R-f8-aQy"/>
+                <constraint firstItem="J3T-BI-v8s" firstAttribute="leading" secondItem="zQ1-9T-tFQ" secondAttribute="leading" constant="10" id="rTW-jZ-KdF"/>
+                <constraint firstAttribute="trailing" secondItem="cCg-nr-AP8" secondAttribute="trailing" id="tbs-LU-Hfo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="_lblEvalue" destination="J3T-BI-v8s" id="5pi-60-MM1"/>
+            </connections>
+            <point key="canvasLocation" x="-566" y="31"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="evalue_archive" width="96" height="120"/>
+    </resources>
+</document>

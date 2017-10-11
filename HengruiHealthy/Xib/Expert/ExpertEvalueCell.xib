@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ExpertEvalueCell" rowHeight="228" id="vq4-LE-Lzg" customClass="ExpertEvalueCell">
+            <rect key="frame" x="0.0" y="0.0" width="412" height="228"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vq4-LE-Lzg" id="mnh-da-6wk">
+                <rect key="frame" x="0.0" y="0.0" width="412" height="228"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VKS-cX-ESo">
+                        <rect key="frame" x="389" y="8" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="qyi-3a-wAL"/>
+                            <constraint firstAttribute="width" constant="15" id="swW-ZQ-4PS"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                        <state key="normal" title="Button" image="empty_star"/>
+                        <state key="selected" image="full_star"/>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpP-G5-ZKa">
+                        <rect key="frame" x="369" y="8" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="kcN-V3-nOU"/>
+                            <constraint firstAttribute="height" constant="15" id="vmh-l5-IgV"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                        <state key="normal" title="Button" image="empty_star"/>
+                        <state key="selected" image="full_star"/>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03P-sn-ayc">
+                        <rect key="frame" x="349" y="8" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="8On-8X-YRI"/>
+                            <constraint firstAttribute="height" constant="15" id="Lu4-B8-lAU"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                        <state key="normal" title="Button" image="empty_star"/>
+                        <state key="selected" image="full_star"/>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dXW-oF-FXV">
+                        <rect key="frame" x="329" y="8" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="5Yi-Ib-B8I"/>
+                            <constraint firstAttribute="height" constant="15" id="M5A-D0-cCc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                        <state key="normal" title="Button" image="empty_star"/>
+                        <state key="selected" image="full_star"/>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mR8-1L-p48">
+                        <rect key="frame" x="309" y="8" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="YPQ-fH-QmI"/>
+                            <constraint firstAttribute="width" constant="15" id="pjd-u6-5LX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                        <state key="normal" title="Button" image="empty_star"/>
+                        <state key="selected" image="full_star"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rdI-X8-ZFA">
+                        <rect key="frame" x="15" y="28" width="382" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kgh-AN-3Db">
+                        <rect key="frame" x="15" y="53" width="382" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bor-3S-GXW">
+                        <rect key="frame" x="15" y="76" width="382" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YcP-9j-bRB">
+                        <rect key="frame" x="30" y="100" width="352" height="119.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="119.5" id="vpA-cB-Smz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mR8-1L-p48" firstAttribute="top" secondItem="mnh-da-6wk" secondAttribute="top" constant="8" id="5v8-ns-QN6"/>
+                    <constraint firstItem="HpP-G5-ZKa" firstAttribute="top" secondItem="mnh-da-6wk" secondAttribute="top" constant="8" id="7A8-sg-A2q"/>
+                    <constraint firstItem="Kgh-AN-3Db" firstAttribute="leading" secondItem="mnh-da-6wk" secondAttribute="leadingMargin" constant="7" id="9DF-fd-OEU"/>
+                    <constraint firstItem="VKS-cX-ESo" firstAttribute="leading" secondItem="HpP-G5-ZKa" secondAttribute="trailing" constant="5" id="9Lp-Lh-TrL"/>
+                    <constraint firstItem="Bor-3S-GXW" firstAttribute="top" secondItem="Kgh-AN-3Db" secondAttribute="bottom" constant="5" id="DoY-0U-ss1"/>
+                    <constraint firstItem="03P-sn-ayc" firstAttribute="top" secondItem="mnh-da-6wk" secondAttribute="top" constant="8" id="FZb-P9-wL1"/>
+                    <constraint firstItem="rdI-X8-ZFA" firstAttribute="leading" secondItem="mnh-da-6wk" secondAttribute="leadingMargin" constant="7" id="Fts-Bo-OAs"/>
+                    <constraint firstItem="YcP-9j-bRB" firstAttribute="top" secondItem="Bor-3S-GXW" secondAttribute="bottom" constant="8" id="I4c-Tp-MZI"/>
+                    <constraint firstItem="dXW-oF-FXV" firstAttribute="leading" secondItem="mR8-1L-p48" secondAttribute="trailing" constant="5" id="Ilz-zP-eIu"/>
+                    <constraint firstAttribute="trailing" secondItem="rdI-X8-ZFA" secondAttribute="trailing" constant="15" id="Nb7-qL-GXx"/>
+                    <constraint firstItem="VKS-cX-ESo" firstAttribute="trailing" secondItem="mnh-da-6wk" secondAttribute="trailingMargin" id="Qw5-eF-sBn"/>
+                    <constraint firstItem="Bor-3S-GXW" firstAttribute="leading" secondItem="mnh-da-6wk" secondAttribute="leadingMargin" constant="7" id="Sdr-Ev-Wdk"/>
+                    <constraint firstItem="dXW-oF-FXV" firstAttribute="top" secondItem="mnh-da-6wk" secondAttribute="top" constant="8" id="Uwl-Mx-Pdc"/>
+                    <constraint firstItem="HpP-G5-ZKa" firstAttribute="leading" secondItem="03P-sn-ayc" secondAttribute="trailing" constant="5" id="WZ0-fl-gvu"/>
+                    <constraint firstItem="YcP-9j-bRB" firstAttribute="leading" secondItem="mnh-da-6wk" secondAttribute="leading" constant="30" id="ZzZ-Ky-Q3V"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Kgh-AN-3Db" secondAttribute="trailing" constant="7" id="aXY-Ty-eFR"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Bor-3S-GXW" secondAttribute="trailing" constant="7" id="jKX-te-jqh"/>
+                    <constraint firstItem="Kgh-AN-3Db" firstAttribute="top" secondItem="rdI-X8-ZFA" secondAttribute="bottom" constant="8" id="oBw-Sp-hBC"/>
+                    <constraint firstItem="03P-sn-ayc" firstAttribute="leading" secondItem="dXW-oF-FXV" secondAttribute="trailing" constant="5" id="qix-0y-iOh"/>
+                    <constraint firstAttribute="trailing" secondItem="YcP-9j-bRB" secondAttribute="trailing" constant="30" id="tSM-8E-TFH"/>
+                    <constraint firstItem="rdI-X8-ZFA" firstAttribute="top" secondItem="dXW-oF-FXV" secondAttribute="bottom" constant="5" id="vab-5K-sCF"/>
+                    <constraint firstItem="VKS-cX-ESo" firstAttribute="top" secondItem="mnh-da-6wk" secondAttribute="topMargin" id="zDF-8c-iLB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="_consHeight" destination="vpA-cB-Smz" id="jbk-j1-Tue"/>
+                <outlet property="_lblContent" destination="Kgh-AN-3Db" id="0yE-BF-gyP"/>
+                <outlet property="_lblTime" destination="Bor-3S-GXW" id="rod-0t-yv9"/>
+                <outlet property="_lblname" destination="rdI-X8-ZFA" id="dQE-3F-CnN"/>
+                <outlet property="_star1" destination="VKS-cX-ESo" id="3aX-sV-yvT"/>
+                <outlet property="_star2" destination="HpP-G5-ZKa" id="xpl-GU-q39"/>
+                <outlet property="_star3" destination="03P-sn-ayc" id="wjq-8m-gov"/>
+                <outlet property="_star4" destination="dXW-oF-FXV" id="IWj-6i-WYe"/>
+                <outlet property="_star5" destination="mR8-1L-p48" id="xHo-bt-6Iz"/>
+                <outlet property="_vwArchive" destination="YcP-9j-bRB" id="e39-r4-XAq"/>
+            </connections>
+            <point key="canvasLocation" x="9" y="158"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="empty_star" width="12" height="12"/>
+        <image name="full_star" width="12" height="12"/>
+    </resources>
+</document>

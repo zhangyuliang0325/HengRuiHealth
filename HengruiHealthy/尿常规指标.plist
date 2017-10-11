@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>illustrate</key>
+		<string>【阳性（+）说明尿路感染】</string>
+		<key>result</key>
+		<string>--</string>
+		<key>name</key>
+		<string>白细胞（LEU）</string>
+	</dict>
+	<dict>
+		<key>illustrate</key>
+		<string>【阳性（+）说明尿路感染】</string>
+		<key>result</key>
+		<string>--</string>
+		<key>name</key>
+		<string>亚硝酸盐（NIT）</string>
+	</dict>
+	<dict>
+		<key>illustrate</key>
+		<string>【超过16，说明有黄疸】</string>
+		<key>result</key>
+		<string>--</string>
+		<key>name</key>
+		<string>尿胆原（UBG）</string>
+	</dict>
+	<dict>
+		<key>illustrate</key>
+		<string>【阳性（+）说明可能有急性肾小球肾炎，糖尿病肾性疾病】</string>
+		<key>result</key>
+		<string>--</string>
+		<key>name</key>
+		<string>蛋白质（PRO）</string>
+	</dict>
+	<dict>
+		<key>illustrate</key>
+		<string>【平均值6.0 增高常见于频繁呕吐糖尿病肾性疾病；降低常见于慢性肾小球炎，糖尿病等】</string>
+		<key>result</key>
+		<string>--</string>
+		<key>name</key>
+		<string>酸碱度（PH）</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,93 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - EAIntroView (2.10.0):
+    - EARestrictedScrollView (~> 1.1.0)
+  - EARestrictedScrollView (1.1.0)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - iOS-Echarts (1.4.4)
+  - Masonry (1.0.2)
+  - MBProgressHUD (1.0.0)
+  - MJExtension (3.0.13)
+  - MJRefresh (3.1.12)
+  - PNChart (0.8.9):
+    - UICountingLabel (~> 1.2.0)
+  - SDCycleScrollView (1.66):
+    - SDWebImage (~> 4.0.0)
+  - SDWebImage (4.0.0):
+    - SDWebImage/Core (= 4.0.0)
+  - SDWebImage/Core (4.0.0)
+  - SignalR-ObjC (2.0.2):
+    - SignalR-ObjC/Core (= 2.0.2)
+  - SignalR-ObjC/Core (2.0.2):
+    - AFNetworking (~> 2.0)
+    - SocketRocket (~> 0.4)
+  - SocketRocket (0.5.1)
+  - TOWebViewController (2.2.6):
+    - TOWebViewController/Core (= 2.2.6)
+  - TOWebViewController/Core (2.2.6)
+  - UICountingLabel (1.2.0)
+  - UITableView+FDTemplateLayoutCell (1.6)
+  - WechatOpenSDK (1.7.7)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - EAIntroView
+  - FMDB
+  - iOS-Echarts
+  - Masonry
+  - MBProgressHUD
+  - MJExtension
+  - MJRefresh
+  - PNChart
+  - SDCycleScrollView
+  - SDWebImage
+  - SignalR-ObjC (~> 2.0)
+  - TOWebViewController
+  - UITableView+FDTemplateLayoutCell
+  - WechatOpenSDK
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  EAIntroView: 3494b7bbd1212e3a4f7e8d16194a1b00e7b9abb2
+  EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  iOS-Echarts: dbc7423d861e5eedee78906a39d205b5c4da9a13
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJExtension: 5932755f451458eefa24239358817f8d291240c7
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  PNChart: 84774d225c2126ded6c93d4dbe6ae98c3a73c2d2
+  SDCycleScrollView: e3ade90e9b3159bec04330b208fbfd81c3f3b671
+  SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  SignalR-ObjC: 3913aa201f436cf21226e0016ca6c7e94265921a
+  SocketRocket: d57c7159b83c3c6655745cd15302aa24b6bae531
+  TOWebViewController: a29908019f7e0e0f8eccfab8a1ee8dcdf4fc5aac
+  UICountingLabel: 1db4e7d023e1762171eb226d6dff47a7a84f27aa
+  UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
+  WechatOpenSDK: cbd332148eb792d444ed4eec94f421d98f2046ee
+
+PODFILE CHECKSUM: a2bca9ab977668d37000f26b49e1fb04632b6689
+
+COCOAPODS: 1.3.1
